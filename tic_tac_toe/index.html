@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              brand: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Tic Tac Toe</title>
+  </head>
+  <body class="lg:font-brand sm:font-brand bg-gray-50">
+    <!-- main container -->
+    <div class="flex justify-center items-center flex-col my-32">
+      <!-- heading -->
+      <h1 class="text-6xl font-bold">TIC TAC TOE</h1>
+      <!-- board container -->
+      <div id="board" class="grid grid-cols-3 gap-6 p-5 my-10">
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+        <button
+          id="cell"
+          class="w-20 h-20 border border-gray-400 p-5 text-4xl font-bold rounded-lg"
+        ></button>
+      </div>
+      <p id="message-box" class="text-3xl"></p>
+      <p id="winning-msg" class="py-5 text-3xl font-bold"></p>
+      <button
+        id="btn"
+        class="text-2xl font-bold text-white bg-blue-500 p-5 my-5 rounded-lg hidden"
+      >
+        Reset Game
+      </button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
